@@ -946,5 +946,15 @@
   "IRSEEKER_TOOLTIP": "Block für den HiTechnic NXT IRSeeker V2 Sensor.",
   "MODE_MODULATED": "Moduliert",
   "MODE_UNMODULATED": "Unmoduliert",
-  "SENSOR_IRSEEKER_GETSAMPLE_TOOLTIP": "Gibt die Position einer Infrarot Signalleuchte."
+  "SENSOR_IRSEEKER_GETSAMPLE_TOOLTIP": "Gibt die Position einer Infrarot Signalleuchte.",
+  "INPUT": "Eingang",
+  "MOTION_SENSOR": "Bewegungssensor",
+  "POTENTIOMETER": "Drehsensor",
+  "SERVO_MOTOR": "Servomotor",
+  "PULSE": "Puls",
+  "RELAY": "Relaikarte",
+  "HUMIDITY": "Luftfeuchtigkeit",
+  "AND": "und",
+  "STEP_MOTOR": "Schrittmotor",
+  "SENSOR_MOISTURE": "Feuchtigkeitsensor"  
 }

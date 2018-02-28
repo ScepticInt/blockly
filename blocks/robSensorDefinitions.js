@@ -13,28 +13,28 @@ goog.require('Blockly.Blocks');
 // define sensors here as a property of sensors  ********************************************************************************
 
 /*- minimal example:
- * 
- * sensors.ultrasonic.ev3 = { 
- *     title : 'ULTRASONIC', 
- *     modes : [ { 
- *         name : 'PRESENCE', 
- *         type : 'Boolean', 
- *     } ], 
- * }; 
- * 
+ *
+ * sensors.ultrasonic.ev3 = {
+ *     title : 'ULTRASONIC',
+ *     modes : [ {
+ *         name : 'PRESENCE',
+ *         type : 'Boolean',
+ *     } ],
+ * };
+ *
  */
 
-/*- all supported properties: 
- * 
- * title,  
- * ports,  
- * modes,  
- *     name,  
- *     type,  
- *     value, 
- *     unit, 
- *     op, 
- * standardPort 
+/*- all supported properties:
+ *
+ * title,
+ * ports,
+ * modes,
+ *     name,
+ *     type,
+ *     value,
+ *     unit,
+ *     op,
+ * standardPort
  */
 
 var sensors = {};
@@ -62,6 +62,7 @@ sensors.battery.ardu = {
         unit : 'VOLT',
     } ]
 };
+sensors.battery.arduino = sensors.battery.ardu;
 
 sensors.code = {};
 sensors.code.bob3 = {
@@ -327,6 +328,15 @@ sensors.key.ardu = {
     } ],
     ports : [ [ '1', 'LEFT' ], [ '2', 'ENTER' ], [ '3', 'RIGHT' ], [ 'SENSOR_KEY_ANY', 'ANY' ] ]
 };
+sensors.key.arduino = {
+    title : 'KEY',
+    modes : [ {
+        name : 'PRESSED',
+        type : 'Boolean',
+        question : true
+    } ],
+    ports : [ [ '1', '1' ], [ '2', '2' ], [ '3', '3' ], [ '4', '4' ], [ '5', '5' ], [ '6', '6' ], [ '7', '7' ], [ '8', '8' ], [ '9', '9' ], [ '10', '10' ], [ '11', '11' ], [ '12', '12' ], [ '13', '13' ],  [ 'SENSOR_KEY_ANY', 'ANY' ] ]
+};
 sensors.key.calliope = {
     title : 'KEY',
     modes : [ {
@@ -367,6 +377,14 @@ sensors.light.ardu = {
     } ],
     ports : [ [ '0', '0' ], [ '1', '1' ], [ '2', '2' ], [ '3', '3' ], [ '4', '4' ], [ '5', '5' ], [ '6', '6' ], [ '7', '7' ] ]
 };
+sensors.light.arduino = {
+  title : 'LIGHT',
+  modes : [ {
+      name : 'LIGHT',
+      type : 'Number',
+      unit : 'PERCENT'
+  } ]
+}
 sensors.light.calliope = {
     title : 'LIGHT',
     modes : [ {
@@ -437,6 +455,15 @@ sensors.sound.nxt = {
 }
 
 sensors.temperature = {};
+sensors.temperature.arduino = {
+    title : 'TEMPERATURE',
+    modes : [ {
+        name : 'VALUE',
+        type : 'Number',
+        unit : 'DEGREE',
+        value : 20
+    } ]
+};
 sensors.temperature.bob3 = {
     title : 'TEMPERATURE',
     modes : [ {
@@ -465,6 +492,7 @@ sensors.timer.bob3 = sensors.timer.ardu;
 sensors.timer.calliope = sensors.timer.ardu;
 sensors.timer.nxt = sensors.timer.ardu;
 sensors.timer.microbit = sensors.timer.ardu;
+sensors.timer.arduino = sensors.timer.ardu;
 sensors.timer.ev3 = {
     title : 'TIMER',
     modes : [ {
@@ -562,7 +590,14 @@ sensors.ultrasonic.ardu = {
         unit : 'CM',
     } ]
 };
-
+sensors.ultrasonic.arduino = {
+    title : 'ULTRASONIC',
+    modes : [ {
+        name : 'DISTANCE',
+        type : 'Number',
+        unit : 'CM',
+    } ]
+};
 sensors.ultrasonic.ev3 = {
     title : 'ULTRASONIC',
     ports : [ [ 'Port 1', '1' ], [ 'Port 2', '2' ], [ 'Port 3', '3' ], [ 'Port 4', '4' ] ],
@@ -588,6 +623,16 @@ sensors.ultrasonic.nxt = {
     standardPort : '4'
 };
 sensors.ultrasonic.mbot = sensors.ultrasonic.nxt;
+
+sensors.moisture = {};
+sensors.moisture.arduino = {
+  title : 'MOISTURE',
+  modes : [ {
+      name : 'MOISTURE',
+      type : 'Number',
+      unit : 'PERCENT'
+  } ]
+}
 
 var sensorsAll = [];
 sensorsAll.ardu = [ sensors.infrared.ardu, sensors.light.ardu, sensors.compass.ardu, sensors.ultrasonic.ardu, sensors.colour.ardu, sensors.key.ardu ];

@@ -21,11 +21,11 @@
 /**
  * @fileoverview English strings.
  * @author Beate.Jost@iais.fraunhofer.de (Beate Jost)
- * 
+ *
  * After modifying this file, either run "build.py" from the parent directory,
  * or run (from this directory): ../i18n/js_to_json.py to regenerate
  * json/{en,qqq,synonyms}.json.
- * 
+ *
  * To convert all of the json files to .js files, run:
  * ../i18n/create_messages.py json/*.json
  */
@@ -1045,3 +1045,15 @@ Blockly.Msg.RIGHT = 'right';
 Blockly.Msg.LEFT = 'left';
 Blockly.Msg.ORA_ROBOT_PUSH_RUN_CALLIOPE2016 = 'Your program »$« is downloaded to Calliope, press the reset button to start it!';
 Blockly.Msg.ORA_ROBOT_PUSH_RUN_NXT = 'Your program »$« is downloaded to the NXT, start it on the robot!';
+Blockly.Msg.OUTPUT = 'output';
+Blockly.Msg.INPUT = 'input';
+Blockly.Msg.MOTION_SENSOR = 'motion sensor';
+Blockly.Msg.POTENTIOMETER = 'potentiometer';
+Blockly.Msg.SERVO_MOTOR = 'servo motor';
+Blockly.Msg.PULSE = 'pulse';
+Blockly.Msg.RELAY = 'relay';
+Blockly.Msg.HUMIDITY = 'humidity';
+Blockly.Msg.AND = 'and';
+Blockly.Msg.STEP_MOTOR = 'step motor';
+Blockly.Msg.SENSOR_MOISTURE = 'moisture sensor';
+Blockly.Msg.MODE_MOISTURE = 'moisture';

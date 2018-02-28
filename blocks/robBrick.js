@@ -46,6 +46,25 @@ Blockly.Blocks['robBrick_EV3-Brick'] = {
     }
 };
 
+Blockly.Blocks['robBrick_Arduino-Brick'] = {
+    /**
+     * Arduino board.
+     *
+     * @constructs robBrick_Arduino_board
+     * @memberof Block
+     */
+
+    init : function() {
+        var boards = [ [ 'Uno', 'Uno' ], ['Mega', 'Mega' ], [ 'Nano', 'Nano' ] ];
+        var board = new Blockly.FieldDropdown(boards);
+        this.setColour('#BBBBBB');
+        this.setInputsInline(false);
+        this.appendDummyInput().appendField(new Blockly.FieldLabel(this.workspace.device.toUpperCase(), 'brick_label'));
+        this.appendDummyInput().appendField(board, 'BOARD');
+        this.setDeletable(false);
+    }
+};
+
 
 Blockly.Blocks['robBrick_makeBlock-Brick'] = {
     /**
