@@ -41,7 +41,7 @@ confBlocks.ultrasonic.arduino = {
 confBlocks.light = {};
 confBlocks.light.arduino = {
     title : 'LIGHT',
-    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    ports : [['Output', 'Output']],
     pins: pinsA_UNO
 };
 

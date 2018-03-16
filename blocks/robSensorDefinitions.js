@@ -383,7 +383,8 @@ sensors.light.arduino = {
       name : 'LIGHT',
       type : 'Number',
       unit : 'PERCENT'
-  } ]
+  } ],
+  ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
 }
 sensors.light.calliope = {
     title : 'LIGHT',
@@ -596,7 +597,8 @@ sensors.ultrasonic.arduino = {
         name : 'DISTANCE',
         type : 'Number',
         unit : 'CM',
-    } ]
+    } ],
+    ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
 };
 sensors.ultrasonic.ev3 = {
     title : 'ULTRASONIC',
@@ -631,7 +633,8 @@ sensors.moisture.arduino = {
       name : 'MOISTURE',
       type : 'Number',
       unit : 'PERCENT'
-  } ]
+  } ],
+  ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
 }
 
 var sensorsAll = [];
