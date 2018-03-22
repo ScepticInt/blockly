@@ -52,6 +52,75 @@ confBlocks.moisture.arduino = {
     pins: pinsA_UNO
 };
 
+confBlocks.potentiometer = {};
+confBlocks.potentiometer.arduino = {
+    title : 'POTENTIOMETER',
+    pins: pinsA_UNO
+};
+
+confBlocks.infrared = {};
+confBlocks.infrared.arduino = {
+    title : 'INFRARED',
+    ports : [['Output', 'Output']],
+    pins: pinsD_UNO
+};
+
+confBlocks.temperature = {};
+confBlocks.temperature.arduino = {
+    title : 'TEMPERATURE',
+    ports : [['TMP36', 'TMP36']],
+    pins: pinsA_UNO
+};
+
+confBlocks.humidity = {};
+confBlocks.humidity.arduino = {
+    title : 'HUMIDITY',
+    ports : [['+', '+']],
+    pins: pinsD_UNO
+};
+
+confBlocks.rotation = {};
+confBlocks.rotation.arduino = {
+    title : 'ROTATION',
+    ports : [['Input', 'Input']],
+    pins: pinsA_UNO
+};
+
+confBlocks.motion = {};
+confBlocks.motion.arduino = {
+    title : 'MOTION',
+    ports : [['Output', 'Output']],
+    pins: pinsD_UNO
+};
+
+confBlocks.button = {};
+confBlocks.button.arduino = {
+    title : 'KEY',
+    ports : [['Output', 'Output']],
+    pins: pinsD_UNO
+};
+
+confBlocks.drop = {};
+confBlocks.drop.arduino = {
+    title : 'DROP',
+    ports : [['S', 'S']],
+    pins: pinsA_UNO
+};
+
+confBlocks.pulse = {};
+confBlocks.pulse.arduino = {
+    title : 'PULSE',
+    ports : [['S', 'S']],
+    pins: pinsA_UNO
+};
+
+confBlocks.rfid = {};
+confBlocks.rfid.arduino = {
+    title : 'RFID',
+    ports : [['SDA', 'SDA'], ['RST', 'RST'] ], //, ['SCK', 'SCK'], ['MOSI', 'MOSI'], ['MISO', 'MISO'] -- connected, but not used in the program
+    pins: pinsD_UNO
+};
+
 function initConfBlocks() {
     for ( var confBlock in confBlocks) {
         if (confBlocks.hasOwnProperty(confBlock)) {

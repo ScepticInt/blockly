@@ -3,6 +3,7 @@
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"lastupdated": "2018-03-19 22:11:28.939000",
 =======
 		"lastupdated": "2018-03-15 10:00:27.712100",
@@ -10,6 +11,9 @@
 =======
 		"lastupdated": "2018-03-16 13:07:19.406505",
 >>>>>>> OpenRoberta/robertalab#755 added test names for the sensor blocks in program
+=======
+		"lastupdated": "2018-03-22 16:21:37.416353",
+>>>>>>> OpenRoberta/robertalab#756 added all sensor blocks for arduino configuration
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -1293,15 +1297,22 @@
 	"ORA_ROBOT_PUSH_RUN_NXT": "Your program »$« is downloaded to the NXT, start it on the robot!",
 	"OUTPUT": "output",
 	"INPUT": "input",
-	"MOTION_SENSOR": "motion sensor",
-	"POTENTIOMETER": "potentiometer",
+	"SENSOR_MOTION": "motion sensor",
+	"SENSOR_POTENTIOMETER": "potentiometer",
 	"SERVO_MOTOR": "servo motor",
-	"PULSE": "pulse",
+	"SENSOR_PULSE": "pulse sensor",
 	"RELAY": "relay",
-	"HUMIDITY": "humidity",
+	"SENSOR_HUMIDITY": "humidity sensor",
 	"AND": "and",
 	"STEP_MOTOR": "step motor",
 	"SENSOR_MOISTURE": "moisture sensor",
+<<<<<<< HEAD
 	"MODE_MOISTURE": "moisture"
 >>>>>>> OpenRoberta/robertalab#745 fixed naming ambiguity in configuration, merged Uno with master
+=======
+	"MODE_MOISTURE": "moisture",
+	"SENSOR_ROTATION": "rotation sensor",
+	"SENSOR_DROP": "drop sensor",
+	"SENSOR_RFID": "RFID reader"
+>>>>>>> OpenRoberta/robertalab#756 added all sensor blocks for arduino configuration
 }

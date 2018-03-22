@@ -1279,15 +1279,22 @@
 	"ORA_ROBOT_PUSH_RUN_NXT": "",
 	"OUTPUT": "",
 	"INPUT": "",
-	"MOTION_SENSOR": "",
-	"POTENTIOMETER": "",
+	"SENSOR_MOTION": "",
+	"SENSOR_POTENTIOMETER": "",
 	"SERVO_MOTOR": "",
-	"PULSE": "",
+	"SENSOR_PULSE": "",
 	"RELAY": "",
-	"HUMIDITY": "",
+	"SENSOR_HUMIDITY": "",
 	"AND": "",
 	"STEP_MOTOR": "",
 	"SENSOR_MOISTURE": "",
+<<<<<<< HEAD
 	"MODE_MOISTURE": ""
 >>>>>>> OpenRoberta/robertalab#745 fixed naming ambiguity in configuration, merged Uno with master
+=======
+	"MODE_MOISTURE": "",
+	"SENSOR_ROTATION": "",
+	"SENSOR_DROP": "",
+	"SENSOR_RFID": ""
+>>>>>>> OpenRoberta/robertalab#756 added all sensor blocks for arduino configuration
 }
