@@ -1295,6 +1295,18 @@
 	"MODE_MOISTURE": "",
 	"SENSOR_ROTATION": "",
 	"SENSOR_DROP": "",
+<<<<<<< HEAD
 	"SENSOR_RFID": ""
 >>>>>>> OpenRoberta/robertalab#756 added all sensor blocks for arduino configuration
+=======
+	"SENSOR_RFID": "",
+	"ACTION_LCD": "",
+	"ACTION_LCDI2C": "",
+	"ACTION_LED": "",
+	"ACTION_PLAY": "",
+	"ACTION_RELAY": "",
+	"ACTION_RGBLED": "",
+	"ACTION_STEPMOTOR": "",
+	"ACTION_SERVO": ""
+>>>>>>> OpenRoberta/robertalab#756 added actor blocks to arduino configuration
 }

@@ -8,6 +8,14 @@ goog.require('Blockly.Msg');
 
 Blockly.Msg.ACCELERATION_TOOLTIP = "Obté el valor d'acceleració en mil·li-gravetats.";
 Blockly.Msg.ACCELEROMETER_ROTATION_TOOLTIP = "Obté la inclinació o la rotació en graus.";
+Blockly.Msg.ACTION_LCD = "LCD";  // untranslated
+Blockly.Msg.ACTION_LCDI2C = "LCD";  // untranslated
+Blockly.Msg.ACTION_LED = "LED";  // untranslated
+Blockly.Msg.ACTION_PLAY = "play";  // untranslated
+Blockly.Msg.ACTION_RELAY = "relay";  // untranslated
+Blockly.Msg.ACTION_RGBLED = "RGB LED";  // untranslated
+Blockly.Msg.ACTION_SERVO = "servo motor";  // untranslated
+Blockly.Msg.ACTION_STEPMOTOR = "step motor";  // untranslated
 Blockly.Msg.ACTIVITY_TOOLTIP = "Bloc per a una activitat addicional";
 Blockly.Msg.ACTOR_TOOLTIP = "Representa qualsevol actor.";
 Blockly.Msg.ADD_COMMENT = "Afegeix un comentari";

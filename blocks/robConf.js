@@ -29,7 +29,7 @@ Blockly.Blocks['robConf_generic'] = {
      * @memberof Block
      */
     init : function(confBlock) {
-        this.setColour(Blockly.CAT_SENSOR_RGB);
+        this.setColour(confBlock.sensor ? Blockly.CAT_SENSOR_RGB : Blockly.CAT_ACTION_RGB);
         var ports;
         var portList = [];
         if (confBlock.ports) {
@@ -41,9 +41,10 @@ Blockly.Blocks['robConf_generic'] = {
             ports = new Blockly.FieldHidden();
         }
 
-        this.appendDummyInput('ROW').appendField(Blockly.Msg['SENSOR_' + confBlock.title + '_'
+        var type = confBlock.sensor ? 'SENSOR_' : 'ACTION_'
+        this.appendDummyInput('ROW').appendField(Blockly.Msg[type + confBlock.title + '_'
                   + this.workspace.device.toUpperCase()]
-                  || Blockly.Msg['SENSOR_' + confBlock.title] || Blockly.checkMsgKey('SENSOR_' + confBlock.title), 'SENSORTITLE');
+                  || Blockly.Msg[type + confBlock.title] || Blockly.checkMsgKey(type + confBlock.title), 'SENSORTITLE');
         this.appendDummyInput().appendField(Blockly.Msg.POPUP_NAME + ':').appendField(new Blockly.FieldTextInput('', this.validate), 'TEXT');
 
 
@@ -52,9 +53,9 @@ Blockly.Blocks['robConf_generic'] = {
 
         var thisBlock = this;
         this.setTooltip(function() {
-            return Blockly.Msg['SENSOR_' + confBlock.title + '_GETSAMPLE_TOOLTIP_' + thisBlock.workspace.device.toUpperCase()]
-                    || Blockly.Msg['SENSOR_' + confBlock.title + '_GETSAMPLE_TOOLTIP']
-                    || Blockly.Msg['SENSOR_' + confBlock.title + '_GETSAMPLE_TOOLTIP'] || Blockly.checkMsgKey('SENSOR_' + confBlock.title + '_GETSAMPLE_TOOLTIP');
+            return Blockly.Msg[type + confBlock.title + '_GETSAMPLE_TOOLTIP_' + thisBlock.workspace.device.toUpperCase()]
+                    || Blockly.Msg[type + confBlock.title + '_GETSAMPLE_TOOLTIP']
+                    || Blockly.Msg[type + confBlock.title + '_GETSAMPLE_TOOLTIP'] || Blockly.checkMsgKey(type + confBlock.title + '_GETSAMPLE_TOOLTIP');
         });
         this.type = 'robConf_' + confBlock.title.toLowerCase();
     }

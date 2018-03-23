@@ -34,91 +34,166 @@ var pinsA_UNO = [ [ 'A0', 'A0' ], [ 'A1', 'A1' ], ['A2', 'A2' ], [ 'A3', 'A3' ],
 confBlocks.ultrasonic = {};
 confBlocks.ultrasonic.arduino = {
     title : 'ULTRASONIC',
-    ports : [['Trig', 'TRIG'], ['Echo', 'ECHO']],
-    pins: pinsD_UNO
+    ports : [['trig', 'TRIG'], ['echo', 'ECHO']],
+    pins: pinsD_UNO,
+    sensor: true
 };
 
 confBlocks.light = {};
 confBlocks.light.arduino = {
     title : 'LIGHT',
-    ports : [['Output', 'Output']],
-    pins: pinsA_UNO
+    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    pins: pinsA_UNO,
+    sensor: true
 };
 
 confBlocks.moisture = {};
 confBlocks.moisture.arduino = {
     title : 'MOISTURE',
     ports : [['S', 'S']],
-    pins: pinsA_UNO
+    pins: pinsA_UNO,
+    sensor: true
 };
 
 confBlocks.potentiometer = {};
 confBlocks.potentiometer.arduino = {
     title : 'POTENTIOMETER',
-    pins: pinsA_UNO
+    pins: pinsA_UNO,
+    sensor: true
 };
 
 confBlocks.infrared = {};
 confBlocks.infrared.arduino = {
     title : 'INFRARED',
-    ports : [['Output', 'Output']],
-    pins: pinsD_UNO
+    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    pins: pinsD_UNO,
+    sensor: true
 };
 
 confBlocks.temperature = {};
 confBlocks.temperature.arduino = {
     title : 'TEMPERATURE',
     ports : [['TMP36', 'TMP36']],
-    pins: pinsA_UNO
+    pins: pinsA_UNO,
+    sensor: true
 };
 
 confBlocks.humidity = {};
 confBlocks.humidity.arduino = {
     title : 'HUMIDITY',
     ports : [['+', '+']],
-    pins: pinsD_UNO
+    pins: pinsD_UNO,
+    sensor: true
 };
 
 confBlocks.rotation = {};
 confBlocks.rotation.arduino = {
     title : 'ROTATION',
-    ports : [['Input', 'Input']],
-    pins: pinsA_UNO
+    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    pins: pinsA_UNO,
+    sensor: true
 };
 
 confBlocks.motion = {};
 confBlocks.motion.arduino = {
     title : 'MOTION',
-    ports : [['Output', 'Output']],
-    pins: pinsD_UNO
+    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    pins: pinsD_UNO,
+    sensor: true
 };
 
 confBlocks.button = {};
 confBlocks.button.arduino = {
     title : 'KEY',
-    ports : [['Output', 'Output']],
-    pins: pinsD_UNO
+    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    pins: pinsD_UNO,
+    sensor: true
 };
 
 confBlocks.drop = {};
 confBlocks.drop.arduino = {
     title : 'DROP',
     ports : [['S', 'S']],
-    pins: pinsA_UNO
+    pins: pinsA_UNO,
+    sensor: true
 };
 
 confBlocks.pulse = {};
 confBlocks.pulse.arduino = {
     title : 'PULSE',
     ports : [['S', 'S']],
-    pins: pinsA_UNO
+    pins: pinsA_UNO,
+    sensor: true
 };
 
 confBlocks.rfid = {};
 confBlocks.rfid.arduino = {
     title : 'RFID',
     ports : [['SDA', 'SDA'], ['RST', 'RST'] ], //, ['SCK', 'SCK'], ['MOSI', 'MOSI'], ['MISO', 'MISO'] -- connected, but not used in the program
-    pins: pinsD_UNO
+    pins: pinsD_UNO,
+    sensor: true
+};
+
+confBlocks.lcd = {};
+confBlocks.lcd.arduino = {
+    title : 'LCD',
+    ports : [['RS', 'RS'], ['E', 'E'], ['D4', 'D4'], ['D5', 'D5'], ['D6', 'D6'], ['D7', 'D7'] ],
+    pins: pinsD_UNO,
+    sensor: false
+};
+
+confBlocks.lcdi2c = {};
+confBlocks.lcdi2c.arduino = {
+    title : 'LCDI2C',
+    sensor: false
+};
+
+confBlocks.led = {};
+confBlocks.led.arduino = {
+    title : 'LED',
+    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    pins: pinsD_UNO,
+    sensor: false
+};
+
+confBlocks.play = {};
+confBlocks.play.arduino = {
+    title : 'PLAY',
+    ports : [['+', '+']],
+    pins: pinsD_UNO,
+    sensor: false
+};
+
+confBlocks.relay = {};
+confBlocks.relay.arduino = {
+    title : 'RELAY',
+    ports : [['IN', 'IN']],
+    pins: pinsD_UNO,
+    sensor: false
+};
+
+confBlocks.rgbled = {};
+confBlocks.rgbled.arduino = {
+    title : 'RGBLED',
+    ports : [[Blockly.Msg.BRICKLIGHT_RED, Blockly.Msg.BRICKLIGHT_RED], [Blockly.Msg.BRICKLIGHT_GREEN, Blockly.Msg.BRICKLIGHT_GREEN], [Blockly.Msg.BRICKLIGHT_BLUE, Blockly.Msg.BRICKLIGHT_BLUE]],
+    pins: pinsD_UNO,
+    sensor: false
+};
+
+confBlocks.stepmotor = {};
+confBlocks.stepmotor.arduino = {
+    title : 'STEPMOTOR',
+    ports : [['IN1', 'IN1'], ['IN2', 'IN2'], ['IN3', 'IN3'], ['IN4', 'IN4'], ['IN5', 'IN5'], ['IN6', 'IN6'], ['IN7', 'IN7'],],
+    pins: pinsD_UNO,
+    sensor: false
+};
+
+confBlocks.servo = {};
+confBlocks.servo.arduino = {
+    title : 'SERVO',
+    ports : [['pulse', 'pulse']],
+    pins: pinsD_UNO,
+    sensor: false
 };
 
 function initConfBlocks() {

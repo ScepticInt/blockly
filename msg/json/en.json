@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"lastupdated": "2018-03-19 22:11:28.939000",
 =======
 		"lastupdated": "2018-03-15 10:00:27.712100",
@@ -14,6 +15,9 @@
 =======
 		"lastupdated": "2018-03-22 16:21:37.416353",
 >>>>>>> OpenRoberta/robertalab#756 added all sensor blocks for arduino configuration
+=======
+		"lastupdated": "2018-03-23 14:58:27.868617",
+>>>>>>> OpenRoberta/robertalab#756 added actor blocks to arduino configuration
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -1313,6 +1317,18 @@
 	"MODE_MOISTURE": "moisture",
 	"SENSOR_ROTATION": "rotation sensor",
 	"SENSOR_DROP": "drop sensor",
+<<<<<<< HEAD
 	"SENSOR_RFID": "RFID reader"
 >>>>>>> OpenRoberta/robertalab#756 added all sensor blocks for arduino configuration
+=======
+	"SENSOR_RFID": "RFID reader",
+	"ACTION_LCD": "LCD",
+	"ACTION_LCDI2C": "LCD",
+	"ACTION_LED": "LED",
+	"ACTION_PLAY": "play",
+	"ACTION_RELAY": "relay",
+	"ACTION_RGBLED": "RGB LED",
+	"ACTION_STEPMOTOR": "step motor",
+	"ACTION_SERVO": "servo motor"
+>>>>>>> OpenRoberta/robertalab#756 added actor blocks to arduino configuration
 }

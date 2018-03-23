@@ -8,6 +8,14 @@ goog.require('Blockly.Msg');
 
 Blockly.Msg.ACCELERATION_TOOLTIP = "Get the acceleration value in milli-gravitys.";
 Blockly.Msg.ACCELEROMETER_ROTATION_TOOLTIP = "Get the tilt or rotations in degrees.";
+Blockly.Msg.ACTION_LCD = "LCD";
+Blockly.Msg.ACTION_LCDI2C = "LCD";
+Blockly.Msg.ACTION_LED = "LED";
+Blockly.Msg.ACTION_PLAY = "play";
+Blockly.Msg.ACTION_RELAY = "relay";
+Blockly.Msg.ACTION_RGBLED = "RGB LED";
+Blockly.Msg.ACTION_SERVO = "servo motor";
+Blockly.Msg.ACTION_STEPMOTOR = "step motor";
 Blockly.Msg.ACTIVITY_TOOLTIP = "Marker for an additional activity.";
 Blockly.Msg.ACTOR_TOOLTIP = "Represents any actor.";
 Blockly.Msg.ADD_COMMENT = "Add Comment";

@@ -8,6 +8,14 @@ goog.require('Blockly.Msg');
 
 Blockly.Msg.ACCELERATION_TOOLTIP = "Vrátí hodnotu zrychlení v násobcích g (mili-g).";
 Blockly.Msg.ACCELEROMETER_ROTATION_TOOLTIP = "Vrátí hodnotu naklonění nebo otočení ve stupních.";
+Blockly.Msg.ACTION_LCD = "LCD";  // untranslated
+Blockly.Msg.ACTION_LCDI2C = "LCD";  // untranslated
+Blockly.Msg.ACTION_LED = "LED";  // untranslated
+Blockly.Msg.ACTION_PLAY = "play";  // untranslated
+Blockly.Msg.ACTION_RELAY = "relay";  // untranslated
+Blockly.Msg.ACTION_RGBLED = "RGB LED";  // untranslated
+Blockly.Msg.ACTION_SERVO = "servo motor";  // untranslated
+Blockly.Msg.ACTION_STEPMOTOR = "step motor";  // untranslated
 Blockly.Msg.ACTIVITY_TOOLTIP = "Značka pro doplňkovou aktivitu.";
 Blockly.Msg.ACTOR_TOOLTIP = "Představuje libovolné výstupní zařízení.";
 Blockly.Msg.ADD_COMMENT = "Přidat komentář";
