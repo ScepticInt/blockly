@@ -1,7 +1,4 @@
 {
-<<<<<<< HEAD
-
-=======
 	"VARIABLES_DEFAULT_NAME": "default name - A simple, general default name for a variable, preferably short. For more context, see [[Translating:Blockly#infrequent_message_types]].\n{{Identical|Item}}",
 	"TODAY": "button text - Button that sets a calendar to today's date.\n{{Identical|Today}}",
 	"DUPLICATE_BLOCK": "context menu - Make a copy of the selected block (and any blocks it contains).\n{{Identical|Duplicate}}",
@@ -1288,17 +1285,9 @@
 	"AND": "",
 	"STEP_MOTOR": "",
 	"SENSOR_MOISTURE": "",
-<<<<<<< HEAD
-	"MODE_MOISTURE": ""
->>>>>>> OpenRoberta/robertalab#745 fixed naming ambiguity in configuration, merged Uno with master
-=======
 	"MODE_MOISTURE": "",
 	"SENSOR_ROTATION": "",
 	"SENSOR_DROP": "",
-<<<<<<< HEAD
-	"SENSOR_RFID": ""
->>>>>>> OpenRoberta/robertalab#756 added all sensor blocks for arduino configuration
-=======
 	"SENSOR_RFID": "",
 	"ACTION_LCD": "",
 	"ACTION_LCDI2C": "",
@@ -1308,5 +1297,4 @@
 	"ACTION_RGBLED": "",
 	"ACTION_STEPMOTOR": "",
 	"ACTION_SERVO": ""
->>>>>>> OpenRoberta/robertalab#756 added actor blocks to arduino configuration
 }

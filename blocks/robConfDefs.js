@@ -14,10 +14,10 @@ goog.require('Blockly.Blocks');
 
 /*- minimal example:
  *
- * sensors.ultrasonic.ardu = {
- *     title : 'ULTRASONIC',
- *     ports : [ Trig, Echo ],
- * };
+ * confBlocks.lcdi2c.arduino = {
+ * title : 'LCDI2C',
+ *  sensor: false
+ };
  *
  */
 
@@ -25,6 +25,8 @@ goog.require('Blockly.Blocks');
  *
  * title,
  * ports,
+ * pins,
+ * sensor
  */
 
 var confBlocks = {};
@@ -42,7 +44,7 @@ confBlocks.ultrasonic.arduino = {
 confBlocks.light = {};
 confBlocks.light.arduino = {
     title : 'LIGHT',
-    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    ports : [['output', 'OUTPUT']],
     pins: pinsA_UNO,
     sensor: true
 };
@@ -65,7 +67,7 @@ confBlocks.potentiometer.arduino = {
 confBlocks.infrared = {};
 confBlocks.infrared.arduino = {
     title : 'INFRARED',
-    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    ports : [['output', 'OUTPUT']],
     pins: pinsD_UNO,
     sensor: true
 };
@@ -86,10 +88,10 @@ confBlocks.humidity.arduino = {
     sensor: true
 };
 
-confBlocks.rotation = {};
-confBlocks.rotation.arduino = {
-    title : 'ROTATION',
-    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+confBlocks.encoder = {};
+confBlocks.encoder.arduino = {
+    title : 'ENCODER',
+    ports : [['output', 'OUTPUT']],
     pins: pinsA_UNO,
     sensor: true
 };
@@ -97,7 +99,7 @@ confBlocks.rotation.arduino = {
 confBlocks.motion = {};
 confBlocks.motion.arduino = {
     title : 'MOTION',
-    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    ports : [['output', 'OUTPUT']],
     pins: pinsD_UNO,
     sensor: true
 };
@@ -105,7 +107,7 @@ confBlocks.motion.arduino = {
 confBlocks.button = {};
 confBlocks.button.arduino = {
     title : 'KEY',
-    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    ports : [['output', 'OUTPUT']],
     pins: pinsD_UNO,
     sensor: true
 };
@@ -151,7 +153,7 @@ confBlocks.lcdi2c.arduino = {
 confBlocks.led = {};
 confBlocks.led.arduino = {
     title : 'LED',
-    ports : [[Blockly.Msg.OUTPUT, Blockly.Msg.OUTPUT]],
+    ports : [['output', 'OUTPUT']],
     pins: pinsD_UNO,
     sensor: false
 };
@@ -175,7 +177,7 @@ confBlocks.relay.arduino = {
 confBlocks.rgbled = {};
 confBlocks.rgbled.arduino = {
     title : 'RGBLED',
-    ports : [[Blockly.Msg.BRICKLIGHT_RED, Blockly.Msg.BRICKLIGHT_RED], [Blockly.Msg.BRICKLIGHT_GREEN, Blockly.Msg.BRICKLIGHT_GREEN], [Blockly.Msg.BRICKLIGHT_BLUE, Blockly.Msg.BRICKLIGHT_BLUE]],
+    ports : [['red', 'RED'], ['green', 'GREEN'], ['blue', 'BLUE']],
     pins: pinsD_UNO,
     sensor: false
 };

@@ -1,29 +1,10 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		"lastupdated": "2018-03-19 22:11:28.939000",
-=======
-		"lastupdated": "2018-03-15 10:00:27.712100",
->>>>>>> master rebase
-=======
-		"lastupdated": "2018-03-16 13:07:19.406505",
->>>>>>> OpenRoberta/robertalab#755 added test names for the sensor blocks in program
-=======
-		"lastupdated": "2018-03-22 16:21:37.416353",
->>>>>>> OpenRoberta/robertalab#756 added all sensor blocks for arduino configuration
-=======
-		"lastupdated": "2018-03-23 14:58:27.868617",
->>>>>>> OpenRoberta/robertalab#756 added actor blocks to arduino configuration
+		"lastupdated": "2018-03-26 11:45:43.920427",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
-<<<<<<< HEAD
-
-=======
 	"VARIABLES_DEFAULT_NAME": "item",
 	"TODAY": "Today",
 	"DUPLICATE_BLOCK": "Duplicate",
@@ -1310,17 +1291,9 @@
 	"AND": "and",
 	"STEP_MOTOR": "step motor",
 	"SENSOR_MOISTURE": "moisture sensor",
-<<<<<<< HEAD
-	"MODE_MOISTURE": "moisture"
->>>>>>> OpenRoberta/robertalab#745 fixed naming ambiguity in configuration, merged Uno with master
-=======
 	"MODE_MOISTURE": "moisture",
 	"SENSOR_ROTATION": "rotation sensor",
 	"SENSOR_DROP": "drop sensor",
-<<<<<<< HEAD
-	"SENSOR_RFID": "RFID reader"
->>>>>>> OpenRoberta/robertalab#756 added all sensor blocks for arduino configuration
-=======
 	"SENSOR_RFID": "RFID reader",
 	"ACTION_LCD": "LCD",
 	"ACTION_LCDI2C": "LCD",
@@ -1330,5 +1303,4 @@
 	"ACTION_RGBLED": "RGB LED",
 	"ACTION_STEPMOTOR": "step motor",
 	"ACTION_SERVO": "servo motor"
->>>>>>> OpenRoberta/robertalab#756 added actor blocks to arduino configuration
 }

@@ -62,7 +62,17 @@ sensors.battery.ardu = {
         unit : 'VOLT',
     } ]
 };
-sensors.battery.arduino = sensors.battery.ardu;
+
+sensors.potentiometer = {};
+sensors.potentiometer.arduino = {
+    title : 'POTENTIOMETER',
+    modes : [ {
+        name : 'VALUE',
+        type : 'Number',
+        unit : 'VOLT',
+    } ],
+    ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
+};
 
 sensors.code = {};
 sensors.code.bob3 = {
@@ -203,6 +213,18 @@ sensors.encoder.nxt = {
     ports : [ [ 'A', 'A' ], [ 'B', 'B' ], [ 'C', 'C' ] ]
 };
 
+sensors.encoder.arduino = {
+    title : 'ENCODER',
+    modes : [ {
+        name : 'ROTATION',
+        type : 'Number',
+        unit : '',
+        op : 'NUM_REV',
+        value : 2
+    } ],
+    ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
+};
+
 sensors.gesture = {};
 sensors.gesture.calliope = {
 //    title : 'GESTURE',
@@ -281,6 +303,15 @@ sensors.infrared.ardu = {
     } ]
 };
 
+sensors.infrared.arduino = {
+    title : 'INFRARED',
+    modes : [ {
+        name : 'VALUE',
+        type : 'Number'
+    }],
+    ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
+};
+
 sensors.infrared.bob3 = {
     title : 'INFRARED',
     modes : [ {
@@ -335,7 +366,7 @@ sensors.key.arduino = {
         type : 'Boolean',
         question : true
     } ],
-    ports : [ [ '1', '1' ], [ '2', '2' ], [ '3', '3' ], [ '4', '4' ], [ '5', '5' ], [ '6', '6' ], [ '7', '7' ], [ '8', '8' ], [ '9', '9' ], [ '10', '10' ], [ '11', '11' ], [ '12', '12' ], [ '13', '13' ],  [ 'SENSOR_KEY_ANY', 'ANY' ] ]
+    ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
 };
 sensors.key.calliope = {
     title : 'KEY',
@@ -456,15 +487,6 @@ sensors.sound.nxt = {
 }
 
 sensors.temperature = {};
-sensors.temperature.arduino = {
-    title : 'TEMPERATURE',
-    modes : [ {
-        name : 'VALUE',
-        type : 'Number',
-        unit : 'DEGREE',
-        value : 20
-    } ]
-};
 sensors.temperature.bob3 = {
     title : 'TEMPERATURE',
     modes : [ {
@@ -474,6 +496,18 @@ sensors.temperature.bob3 = {
         value : 20
     } ]
 };
+sensors.temperature.arduino = {
+    title : 'TEMPERATURE',
+    modes : [ {
+        name : 'VALUE',
+        type : 'Number',
+        unit : 'DEGREE',
+        value : 20
+    } ],
+    ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
+};
+
+
 sensors.temperature.calliope = sensors.temperature.bob3
 sensors.temperature.microbit = sensors.temperature.bob3
 
@@ -630,9 +664,62 @@ sensors.moisture = {};
 sensors.moisture.arduino = {
   title : 'MOISTURE',
   modes : [ {
-      name : 'MOISTURE',
+      name : 'VALUE',
       type : 'Number',
       unit : 'PERCENT'
+  } ],
+  ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
+}
+
+sensors.humidity = {};
+sensors.humidity.arduino = {
+  title : 'HUMIDITY',
+  modes : [ {
+      name : 'VALUE',
+      type : 'Number',
+      unit : 'PERCENT'
+  } ],
+  ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
+}
+
+sensors.motion = {};
+sensors.motion.arduino = {
+  title : 'MOTION',
+  modes : [ {
+    name : 'PRESENCE',
+    type : 'Boolean',
+  } ],
+  ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
+}
+
+sensors.pulse = {};
+sensors.pulse.arduino = {
+  title : 'PULSE',
+  modes : [ {
+      name : 'VALUE',
+      type : 'Number',
+      unit : 'PERCENT'
+  } ],
+  ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
+}
+
+sensors.drop = {};
+sensors.drop.arduino = {
+  title : 'DROP',
+  modes : [ {
+      name : 'VALUE',
+      type : 'Number',
+      unit : 'PERCENT'
+  } ],
+  ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
+}
+
+sensors.rfid = {};
+sensors.rfid.arduino = {
+  title : 'RFID',
+  modes : [ {
+      name : 'VALUE',
+      type : 'Number'
   } ],
   ports : [ [ 'Test1', 'Test1' ], [ 'Test2', 'Test2' ] ]
 }
@@ -649,6 +736,9 @@ sensorsAll.calliope = [ sensors.key.calliope, sensors.pintouch.calliope, sensors
         sensors.accelerometer.calliope ];
 sensorsAll.microbit = [ sensors.key.microbit, sensors.pintouch.microbit, sensors.gesture.microbit, sensors.compass.microbit, sensors.timer.microbit,
         sensors.temperature.microbit, sensors.pin.microbit, sensors.accelerometer.microbit ];
+sensorsAll.arduino = [ sensors.key.arduino, sensors.timer.arduino, sensors.temperature.arduino, sensors.ultrasonic.arduino, sensors.light.arduino,
+   sensors.moisture.arduino, sensors.potentiometer.arduino, sensors.infrared.arduino, sensors.humidity.arduino, sensors.encoder.arduino, sensors.motion.arduino,
+  sensors.pulse.arduino, sensors.drop.arduino, sensors.rfid.arduino   ];
 
 function initSensors() {
     for ( var sensor in sensors) {
