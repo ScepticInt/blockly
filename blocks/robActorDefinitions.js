@@ -6,7 +6,7 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.robActorDefs');
+goog.provide('Blockly.Blocks.robActorDefinitions');
 
 goog.require('Blockly.Blocks');
 
