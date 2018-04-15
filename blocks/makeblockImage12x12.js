@@ -5,7 +5,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.makeblockImage12x12');
+goog.provide('Blockly.Blocks.makeblocksinoImage');
 
 goog.require('Blockly.Blocks');
 
@@ -13,7 +13,7 @@ goog.require('Blockly.Blocks');
  * @lends Block
  */
 
-Blockly.Blocks['makeblockImage_image12x12'] = {
+Blockly.Blocks['makeblockImage_sinoImage'] = {
   /**
    * Represents an image.
    *
